@@ -1,0 +1,9 @@
+{
+  "sourceSHA256": "2e1df40ce2959ca0ba3425496145a5e10936c1ec782ff4c7761d0ff0842d6d83",
+  "binarySHA256": "c2302e57c262080a8abf8e31fe7f349dc466a167a1eb81041afc51a3c2097276",
+  "architectures": [
+    "arm64",
+    "x86_64"
+  ],
+  "minimumMacOS": "13.0"
+}

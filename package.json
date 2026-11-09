@@ -1,0 +1,66 @@
+{
+  "name": "dsh-autonomy",
+  "version": "0.1.5-project-read.4",
+  "description": "Community adaptation of dsh-autonomy: project-scoped read-only Chat, normal Agent, same session.",
+  "type": "module",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.cjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "scripts",
+    "tests",
+    "LICENSE",
+    "NOTICE",
+    "THIRD-PARTY-NOTICES.txt",
+    "README.md",
+    "cordis.patch.yml",
+    "ORIGIN.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=24.0.0",
+    "dsh": "0.2.2-rc.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cschensheng1-web/dsh-autonomy-project-chat.git"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run build && npm test"
+  },
+  "devDependencies": {
+    "@deepseek-ai/schemastery": "3.19.0",
+    "cfb": "1.2.2",
+    "esbuild": "0.25.12",
+    "htmlparser2": "12.0.0",
+    "pdfjs-dist": "6.4.299",
+    "saxes": "6.0.0",
+    "unpdf": "2.1.0",
+    "word-extractor": "1.0.4",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "yauzl": "3.4.0",
+    "zod": "4.6.7"
+  },
+  "homepage": "https://github.com/cschensheng1-web/dsh-autonomy-project-chat#readme",
+  "bugs": {
+    "url": "https://github.com/cschensheng1-web/dsh-autonomy-project-chat/issues"
+  }
+}

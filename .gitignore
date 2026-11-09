@@ -1,0 +1,13 @@
+node_modules/
+.DS_Store
+*.log
+*.tgz
+.env
+.env.*
+.dsh/
+.cache/
+browser-profile/
+plugin-data/
+chats.json
+chats.json.tmp
+ggml-*.bin

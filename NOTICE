@@ -1,0 +1,4 @@
+Derived from dsh-autonomy 0.1.5 by JinkaiLiu, distributed under MIT.
+Upstream: https://github.com/JinkaiLiu/dsh-autonomy
+This community adaptation adds project-scoped read-only Chat tools and is not an upstream release.
+Original MIT license is preserved in LICENSE. Bundled dependencies retain their license notices.
